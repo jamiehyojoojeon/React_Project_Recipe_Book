@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    background-color: aliceblue;
+    height: 600px;
+    background: url("./images/header3.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+main{
+}
+.logo{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3em;
+    padding-top: 50px;
+}
+.food-list-container{
+    width: 100%;
+    margin: 0 auto;
+}
+.food-list-headline{
+    width: 80%;
+   text-align: center;
+   margin: 80px auto 40px;
+}
+.food-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+.food-list-item{
+    
+}
