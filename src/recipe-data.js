@@ -1,7 +1,11 @@
 import cajunChicken from './images/cajun-chicken-pasta.jpg';
+import cajunChickenFull from './images/cajun-chicken-pastaFull.jpg';
 import bananaBread from './images/banana-bread.jpg';
+import bananaBreadFull from './images/banana-breadFull.jpg';
 import spaghetti from './images/spaghetti.png';
+import spaghettiFull from './images/spaghettiFull.png';
 import enchiladas from './images/enchiladas.jpg';
+import enchiladasFull from './images/enchiladasFull.jpg';
 
 function Recipe(name, thumbImage, fullImage, ingredients, time, directions) {
     this.name = name;
@@ -16,7 +20,7 @@ const recipeInfoList = [
     new Recipe(
         "CREAMY CAJUN CHICKEN PASTA",
         cajunChicken,
-        cajunChicken,
+        cajunChickenFull,
         [
             "2 boneless skinless chicken breast halves, cut into thin strips",
             "4 ounces linguine, cooked al dente",
@@ -41,7 +45,7 @@ const recipeInfoList = [
     new Recipe(
         "BEST BANANA BREAD",
         bananaBread,
-        bananaBread,
+        bananaBreadFull,
         [
             "1⁄2 cup butter, softened",
             "1cup granulated sugar",
@@ -68,7 +72,7 @@ const recipeInfoList = [
     new Recipe(
         "WORLD FAMOUS SPAGHETTI",
         spaghetti,
-        spaghetti,
+        spaghettiFull,
         [
             "2 lbs Italian sausage, casings removed (mild or hot)",
             "1 small onion, chopped (optional)",
@@ -98,7 +102,7 @@ const recipeInfoList = [
     new Recipe(
         "SOUR CREAM CHICKEN ENCHILADAS",
         enchiladas,
-        enchiladas,
+        enchiladasFull,
         [
             "1 lb chicken breast, diced",
             "1 medium onion, minced",

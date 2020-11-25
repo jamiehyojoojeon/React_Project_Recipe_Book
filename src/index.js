@@ -48,6 +48,10 @@ class Header extends React.Component {
                 <div className="logo">
                     <h1>Foodie</h1>
                 </div>
+                <div className="welcome">
+                    <h2>We're here to help you put dinner (and breakfast and lunch) on the table
+                    <br /> with less stress and more joy.</h2>
+                </div>
             </header>
         );
     }
