@@ -37,6 +37,7 @@ main{
     margin-top: 100px;
 }
 .welcome h2{
+    margin: 0 auto;
     text-align: center;
     font-family: 'Nunito', sans-serif;
 }
@@ -61,6 +62,9 @@ main{
     display: block;
     line-height: 0;
     box-shadow: 0px 2px 3px #a2a2a2;
+}
+.food-list-item img{
+    width: 100%;
 }
 .food-list-item:hover{
     cursor: pointer;
@@ -103,6 +107,7 @@ button:hover{
     display: flex;
     margin-bottom: 10px;
 }
+
 h1{
     text-align: center;
 }
@@ -134,4 +139,33 @@ h1{
 }
 .time{
     margin-bottom: 30px;
+}
+
+@media (max-width: 768px){
+    .recipe-container{
+        width: 80%;
+    }
+    .recipe-list-container{
+        display: inline-block;
+    }
+    .img-container img{
+        width: 100%;
+    }
+    .food-list{
+        display: block;
+        width: 50%;
+    }
+    .food-list li{
+        margin: 10px auto;
+    }
+    .welcome {
+        margin: 100px auto 0px;
+        width: 80%;
+    }
+}
+@media (max-width: 992px){
+    .welcome h2{
+        width: 80%;
+        text-align: center;
+    }
 }
