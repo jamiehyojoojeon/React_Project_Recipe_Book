@@ -46,7 +46,7 @@ class Header extends React.Component {
         return (
             <header>
                 <div className="logo">
-                    <h1>Foodie</h1>
+                    <h1>Recipe Book</h1>
                 </div>
                 <div className="welcome">
                     <h2>We're here to help you put dinner (and breakfast and lunch) on the table
@@ -81,7 +81,12 @@ class RecipeList extends React.Component {
                                 return (
                                     <li className="food-list-item"
                                         onClick={() => this.props.showRecipe(recipeInfo)}>
-                                        <img src={recipeInfo.thumbImage} />
+                                        <div className="food-list-img">
+                                            <img src={recipeInfo.thumbImage} />
+                                        </div>
+                                        <div className="food-list-name">
+                                            <h4>{recipeInfo.name}</h4>
+                                        </div>
                                     </li>
                                 )
                             })

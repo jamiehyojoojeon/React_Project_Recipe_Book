@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 *{
@@ -8,7 +8,8 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Epilogue', sans-serif;
+
 
 }
 header{
@@ -30,16 +31,34 @@ main{
     padding-top: 50px;
 }
 .logo h1{
-    color: #000;
-    font-size: 3em;
+    color: #11097f;
+    font-size: 2.5em;
 }
 .welcome{
-    margin-top: 100px;
+    margin: 100px auto;
+    background: #fff;
+    width: 50%;
+    padding: 30px;
 }
 .welcome h2{
     margin: 0 auto;
     text-align: center;
     font-family: 'Nunito', sans-serif;
+    color: #464eac;
+}
+h3{
+    color: #3c547f;
+}
+h4{
+    height: 50px;
+    width: 100%;
+    background: #eeeeee;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    letter-spacing: 1px;
+    text-align: center;
+    overflow: hidden;
 }
 .food-list-container{
     width: 100%;
@@ -58,13 +77,24 @@ main{
     margin: 0 auto;
 }
 .food-list-item{
-    border: 5px solid #fff;
+    border-bottom: 5px solid #6661bc;
     display: block;
-    line-height: 0;
-    box-shadow: 0px 2px 3px #a2a2a2;
+    flex-basis: 20%;
+    
+    
 }
-.food-list-item img{
+.food-list-img{
+    overflow: hidden;
+}
+.food-list-img img{
+    overflow: hidden;
     width: 100%;
+    display: block;
+    transition: transform .4s ease-out;
+}
+
+.food-list-img img:hover{
+    transform: scale(1.2);
 }
 .food-list-item:hover{
     cursor: pointer;
@@ -85,7 +115,7 @@ button:hover{
     color: gray;
 }
 .recipe-container{
-    width: 80%;
+    width: 60%;
     height: auto;
     background-color: #fff;
     box-shadow: 0px 3px 5px #a2a2a2;
@@ -110,6 +140,7 @@ button:hover{
 
 h1{
     text-align: center;
+    color:#11097f;
 }
 .recipe-list-container{
     width: 90%;
@@ -118,8 +149,11 @@ h1{
     justify-content: space-between;
 }
 .recipe-list-container h2{
-    border-bottom: 1px solid #000;
     margin-bottom: 30px;
+    background: #eeeeee;
+    padding: 10px;
+    color: #2b2e31;
+    letter-spacing: 1px;
 }
 .left{
     flex-basis: 45%;
@@ -164,8 +198,13 @@ h1{
     }
 }
 @media (max-width: 992px){
-    .welcome h2{
+    .welcome{
         width: 80%;
+    }
+    .welcome h2{
         text-align: center;
+    }
+    .recipe-container{
+        width: 90%;
     }
 }
