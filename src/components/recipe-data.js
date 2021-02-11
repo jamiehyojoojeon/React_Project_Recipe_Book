@@ -1,13 +1,14 @@
-import cajunChicken from './images/cajun-chicken-pasta.jpg';
-import cajunChickenFull from './images/cajun-chicken-pastaFull.jpg';
-import bananaBread from './images/banana-bread.jpg';
-import bananaBreadFull from './images/banana-breadFull.jpg';
-import spaghetti from './images/spaghetti.png';
-import spaghettiFull from './images/spaghettiFull.png';
-import enchiladas from './images/enchiladas.jpg';
-import enchiladasFull from './images/enchiladasFull.jpg';
+import cajunChicken from '../images/cajun-chicken-pasta.jpg';
+import cajunChickenFull from '../images/cajun-chicken-pastaFull.jpg';
+import bananaBread from '../images/banana-bread.jpg';
+import bananaBreadFull from '../images/banana-breadFull.jpg';
+import spaghetti from '../images/spaghetti.png';
+import spaghettiFull from '../images/spaghettiFull.png';
+import enchiladas from '../images/enchiladas.jpg';
+import enchiladasFull from '../images/enchiladasFull.jpg';
 
-function Recipe(name, thumbImage, fullImage, ingredients, time, directions) {
+function Recipe(id, name, thumbImage, fullImage, ingredients, time, directions) {
+    this.id = id;
     this.name = name;
     this.thumbImage = thumbImage;
     this.fullImage = fullImage;
@@ -18,6 +19,7 @@ function Recipe(name, thumbImage, fullImage, ingredients, time, directions) {
 
 const recipeInfoList = [
     new Recipe(
+        "creamy-cajun-chicken-pasta",
         "CREAMY CAJUN CHICKEN PASTA",
         cajunChicken,
         cajunChickenFull,
@@ -43,6 +45,7 @@ const recipeInfoList = [
         ]
     ),
     new Recipe(
+        "best-banana-bread",
         "BEST BANANA BREAD",
         bananaBread,
         bananaBreadFull,
@@ -70,6 +73,7 @@ const recipeInfoList = [
         ]
     ),
     new Recipe(
+        "world-famous-spaghetti",
         "WORLD FAMOUS SPAGHETTI",
         spaghetti,
         spaghettiFull,
@@ -100,6 +104,7 @@ const recipeInfoList = [
         ]
     ),
     new Recipe(
+        "sour-cream-chicken-enchiladas",
         "SOUR CREAM CHICKEN ENCHILADAS",
         enchiladas,
         enchiladasFull,
