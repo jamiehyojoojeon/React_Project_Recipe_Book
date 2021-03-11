@@ -5,7 +5,7 @@ import Router from "./components/router";
 import "./style.css";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={"/recipe-book"}>
     <Router />
   </BrowserRouter>,
   document.getElementById("root")

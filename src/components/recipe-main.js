@@ -9,7 +9,7 @@ class Recipe_Book extends React.Component {
     return (
       <div className="wrapper">
         <Header />
-        <RecipeList RecipeData={recipeInfoList} />
+        <RecipeList title="Top Recipes" RecipeData={recipeInfoList} />
       </div>
     );
   }

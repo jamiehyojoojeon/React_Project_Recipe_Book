@@ -1,10 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { Link, withRouter } from "react-router-dom";
 import "../style.css";
-import Search from "./search.js";
-import Recipe_Book from "./recipe-main";
-import recipeInfoList from "./recipe-data.js";
 
 class Header extends React.Component {
   constructor(props) {

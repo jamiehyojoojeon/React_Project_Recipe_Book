@@ -8,7 +8,7 @@ class RecipeList extends React.Component {
       <main>
         <div className="food-list-container">
           <div className="food-list-headline">
-            <h3>Top Recipes</h3>
+            <h3>{this.props.title}</h3>
           </div>
           <ul className="food-list">
             {
